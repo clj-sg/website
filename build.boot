@@ -18,6 +18,8 @@
                  [org.clojars.magomimmo/shoreleave-remote "0.3.1"]
                  [compojure "1.5.2"]                   ;; routing lib
                  [javax.servlet/javax.servlet-api "3.1.0"]     ;; for dev only
+		 [org.martinklepsch/boot-garden "1.3.2-1"] ;; CSS preprocessor
+                 [garden "1.2.5"]
                  ])
 
 (require '[adzerk.boot-cljs :refer [cljs]]

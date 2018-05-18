@@ -1,148 +1,335 @@
-/* From: http://www.assemblesoft.com/examples/form/simpleform.html */
-* {margin:0; padding:0;}
+html
+{ height: 100%;}
 
-html {
-	font: 90%/1.3 arial,sans-serif;
-	padding:1em;
-	background:#B9C2CC;
-}
-form {
-	background:#fff;
-	padding:1em;
-	border:1px solid #eee;
-}
+*
+{ margin: 0;
+  padding: 0;}
 
-fieldset div {
-	margin:0.3em 0;
-	clear:both;
-}
+body
+{ font: normal .80em 'trebuchet ms', arial, sans-serif;
+  background: #FFF;
+  color: #555;}
 
-form {
-	margin:1em;
-	width:15em;
-}
+p
+{ padding: 0 0 20px 0;
+  line-height: 1.7em;}
 
-label {
-	float:none;
-	width:12em;
-	display:block;
-	clear:both;
-}
+img
+{ border: 0;}
 
-legend {
-	color:#0b77b7;
-	font-size:1.4em;
-}
-legend span {
-	width:10em;
-	text-align:right;
-}
-input {
-	padding:0.15em;
-	width:10em;
-	border:1px solid #ddd;
-	background:#fafafa;
-	font:bold 1em arial, sans-serif;
-	display:block;
-	float:left;
-}
-input:hover, input:focus {
-	border-color:#c5c5c5;
-	background:#f6f6f6;
-} 
-fieldset {
-	border:1px solid #ddd;
-	padding:0 0.5em 0.5em;
-}
-.date input {
-	background-image:url(../gfx/calendar-small.gif);
-	background-repeat:no-repeat;
-	background-position:100% 50%;
-}
+h1, h2, h3, h4, h5, h6 
+{ color: #362C20;
+  letter-spacing: 0em;
+  padding: 0 0 5px 0;}
 
-.date fieldset label {
-	float:none;
-	display:block;
-	text-align:left;
-	width:auto;
-}
-.date fieldset div {
-	float:left;
-	clear:none;
-	margin-right:0.2em;
-}
-.radio, .date {
-	position:relative;
-}
-.radio fieldset, .date fieldset {
-	border:none;
-	width:auto;
-	padding:1px 0 0 11em;
-}
-.radio legend, .date legend {
-	font-size:1em;
-	color:#000;
-}
-.radio legend span, .date legend span {
-	position:absolute;
-	left:0;
-	top:0.3em;
-	width:10em;
-	display:block;
-}
-.radio label, .radio input {
-	vertical-align:middle;
-	display:inline;
-	float:none;
-	width:auto;
-	background:none;
-	border:none;
-}
-.radio div {
-	float:left;
-	white-space:nowrap;
-	clear:none;
-}
+h1, h2, h3
+{ font: normal 170% 'century gothic', arial;
+  margin: 0 0 15px 0;
+  padding: 15px 0 5px 0;
+  color: #000;}
 
-.email {
-	width:14em;
-}
+h2
+{ font-size: 160%;
+  padding: 9px 0 5px 0;
+  color: #009FBC;}
 
-input.default {
-	color:#bbb;
-}
+h3
+{ font-size: 140%;
+  padding: 5px 0 0 0;}
 
-#submit {
-	margin:1em;
-	width:69px;
-	height:26px;
-	overflow:hidden;
-	border:0;
-	display:block;
-	cursor:pointer !important;
-}
-#submit:hover {
-	background-position:0 -26px;
-}
+h4, h6
+{ color: #009FBC;
+  padding: 0 0 5px 0;
+  font: normal 110% arial;
+  text-transform: uppercase;}
 
-.error {
-	color: #FF1400;
-}
-/*
-:invalid {
-	color:red;
-}
-*/
-/*
-input[type=checkbox], input[type=radio] { visibility: hidden; width:0; height:0; padding:0; margin:0; }
-input[type=checkbox] + label, input[type=radio] + label { padding-left:18px; }
-input[type=checkbox] + label{ background: url(../gfx/check_radio.png) 0 0 no-repeat; }
-input[type=checkbox]:focus + label{ background-position: 0 -16px; }
-input[type=checkbox] + label:hover{ background-position: 0 -32px; } 
-input[type=checkbox]:checked + label{ background-position: 0 -48px; }
+h5, h6
+{ color: #888;
+  font: normal 95% arial;
+  letter-spacing: normal;
+  padding: 0 0 15px 0;}
 
-input[type=radio] + label{ background: url(../gfx/check_radio.png) 0 -64px no-repeat; }
-input[type=radio]:focus + label{ background-position: 0 -80px; }
-input[type=radio] + label:hover{ background-position: 0 -96px; } 
-input[type=radio]:checked + label{ background-position: 0 -112px; }
-*/
+a, a:hover
+{ outline: none;
+  text-decoration: underline;
+  color: #00C6F0;}
+
+a:hover
+{ text-decoration: none;}
+
+blockquote
+{ margin: 20px 0; 
+  padding: 10px 20px 0 20px;
+  border: 1px solid #E5E5DB;
+  background: #FFF;}
+
+ul
+{ margin: 2px 0 22px 17px;}
+
+ul li
+{ list-style-type: circle;
+  margin: 0 0 6px 0; 
+  padding: 0 0 4px 5px;
+  line-height: 1.5em;}
+
+ol
+{ margin: 8px 0 22px 20px;}
+
+ol li
+{ margin: 0 0 11px 0;}
+
+.left
+{ float: left;
+  width: auto;
+  margin-right: 10px;}
+
+.right
+{ float: right; 
+  width: auto;
+  margin-left: 10px;}
+
+.center
+{ display: block;
+  text-align: center;
+  margin: 20px auto;}
+
+#main, #logo, #menubar, #site_content, #footer
+{ margin-left: auto; 
+  margin-right: auto;}
+
+#header
+{ background: #CCC;
+  border-bottom: 1px solid #CCC;
+  height: 186px;}
+  
+#banner
+{  background: transparent url(banner.jpg) no-repeat;
+  width: 860px;
+  height: 180px;
+  margin-bottom: 20px;
+  border: 10px solid #DDD;}
+
+#logo
+{ width: 880px;
+  position: relative;
+  height: 140px;
+  background: #F5F5F5;}
+
+#logo #logo_text 
+{ position: absolute; 
+  top: 10px;
+  left: 0;}
+
+#logo h1, #logo h2
+{ font: normal 300% 'century gothic', arial, sans-serif;
+  border-bottom: 0;
+  text-transform: none;
+  margin: 0 0 0 9px;}
+
+#logo_text h1, #logo_text h1 a, #logo_text h1 a:hover 
+{ padding: 22px 0 0 0;
+  color: #323232;
+  letter-spacing: 0.1em;
+  text-decoration: none;}
+
+#logo_text h1 a .logo_colour
+{ color: #00C6F0;}
+
+#logo_text a:hover .logo_colour
+{ color: #DDD;}
+
+#logo_text h2
+{ font-size: 120%;
+  padding: 4px 0 0 0;
+  color: #999;}
+
+#menubar
+{ width: 872px;
+  height: 45px;
+  padding-right: 8px;
+  background: #DDD;
+  border-top: 1px solid #CCC;} 
+
+ul#menu
+{ float: right;
+  margin: 0;}
+
+ul#menu li
+{ float: left;
+  padding: 0 0 0 9px;
+  list-style: none;
+  margin: 8px 4px 0 4px;}
+
+ul#menu li a
+{ font: normal 100% 'trebuchet ms', sans-serif;
+  display: block; 
+  float: left; 
+  height: 20px;
+  padding: 6px 20px 5px 20px;
+  text-align: center;
+  color: #FFF;
+  text-decoration: none;
+  background: #BBB;} 
+
+ul#menu li.selected a
+{ height: 20px;
+  padding: 6px 20px 5px 11px;}
+
+ul#menu li.selected
+{ margin: 8px 4px 0 13px;
+  background: #00C6F0;}
+
+ul#menu li.selected a, ul#menu li.selected a:hover
+{ background: #00C6F0;
+  color: #FFF;}
+
+ul#menu li a:hover
+{ color: #323232;}
+
+#site_content
+{ width: 880px;
+  overflow: hidden;
+  margin: 20px auto 0 auto;
+  padding: 0 0 10px 0;} 
+
+#sidebar_container
+{ float: left;
+  width: 224px;}
+
+.sidebar_top
+{ width: 222px;
+  height: 14px;
+  background: transparent url(side_top.png) no-repeat;}
+
+.sidebar_base
+{ width: 222px;
+  height: 14px;
+  background: url(side_base.png) no-repeat;}
+
+.sidebar
+{ float: right;
+  width: 222px;
+  padding: 0;
+  margin: 0 0 16px 0;}
+
+.sidebar_item
+{ background: url(side_back.png) repeat-y;
+  padding: 0 15px;
+  width: 192px;}
+
+.sidebar li a.selected
+{ color: #444;} 
+
+.sidebar ul
+{ margin: 0;} 
+
+#content
+{ text-align: left;
+  width: 620px;
+  padding: 0 0 0 5px;
+  float: right;}
+  
+#content ul
+{ margin: 2px 0 22px 0px;}
+
+#content ul li, .sidebar ul li
+{ list-style-type: none;
+  background: url(bullet.png) no-repeat;
+  margin: 0 0 0 0; 
+  padding: 0 0 4px 25px;
+  line-height: 1.5em;}
+
+#footer
+{ width: 100%;
+  font-family: 'trebuchet ms', sans-serif;
+  font-size: 100%;
+  height: 80px;
+  padding: 28px 0 5px 0;
+  text-align: center; 
+  background: #CCC;
+  border-top: 1px solid #AAA;
+  color: #FFF;}
+
+#footer p
+{ line-height: 1.7em;
+  padding: 0 0 10px 0;}
+
+#footer a
+{ color: #FFF;
+  text-decoration: none;}
+
+#footer a:hover
+{ color: #00C6F0;
+  text-decoration: none;}
+
+.search
+{ color: #5D5D5D; 
+  border: 1px solid #BBB; 
+  width: 134px; 
+  padding: 4px; 
+  font: 100% arial, sans-serif;}
+
+.form_settings
+{ margin: 15px 0 0 0;}
+
+.form_settings p
+{ padding: 0 0 4px 0;}
+
+.form_settings span
+{ float: left; 
+  width: 200px; 
+  text-align: left;}
+  
+.form_settings input, .form_settings textarea
+{ padding: 5px; 
+  width: 299px; 
+  font: 100% arial; 
+  border: 1px solid #E5E5DB; 
+  background: #FFF; 
+  color: #47433F;}
+  
+.form_settings .submit
+{ font: 100% arial; 
+  border: 0; 
+  width: 99px; 
+  margin: 0 0 0 212px; 
+  height: 33px;
+  padding: 2px 0 3px 0;
+  cursor: pointer; 
+  background: #3B3B3B; 
+  color: #FFF;}
+
+.form_settings textarea, .form_settings select
+{ font: 100% arial; 
+  width: 299px;}
+
+.form_settings select
+{ width: 310px;}
+
+.form_settings .checkbox
+{ margin: 4px 0; 
+  padding: 0; 
+  width: 14px;
+  border: 0;
+  background: none;}
+
+.separator
+{ width: 100%;
+  height: 0;
+  border-top: 1px solid #D9D5CF;
+  border-bottom: 1px solid #FFF;
+  margin: 0 0 20px 0;}
+  
+table
+{ margin: 10px 0 30px 0;}
+
+table tr th, table tr td
+{ background: #3B3B3B;
+  color: #FFF;
+  padding: 7px 4px;
+  text-align: left;}
+  
+table tr td
+{ background: #E5E5DB;
+  color: #47433F;
+  border-top: 1px solid #FFF;}
