@@ -21,10 +21,45 @@
                  :background "#FFF" 
                  :color "#FFF"}]))
 ;;p
+(defn p 
+  [] 
+  (g/css [:p {:padding "0 0 20px 0" 
+              :line-height (u/em 1.7)}]))
 
 ;;img
+(defn img
+  []
+  (g/css [:img {:border 0}])
 
-;;h1
+(defn h1-h2-h3-h4-h5-h6
+  []
+  (g/css [:h1 :h2 :h3 :h4 :h5 :h6 {:color "#362C20" 
+                                   :letter-spacing (u/em 0)
+                                   :padding "0 0 5px 0"}]))
 
-;;h2
+(defn h1-h2-h3
+  []
+  (g/css [:h1 :h2 :h3 {:font "normal 170% 'century gothic', arial"
+                       :margin "0 0 15px 0"
+                       :padding "15px 0 5px 0"
+                       :color "#000"}]))
+
+(defn h2
+  []
+  (g/css [:h2 {:font-size (u/percent 160) 
+               :padding "9px 0 5px 0" 
+               :color "#009FBC"}]))
+
+
+(defn h3
+  []
+  (g/css [:h3 {:font-size (u/percent 160)
+               :padding "9px 0 5px 0"}]))
+
+
+(defn h4-h6
+  []
+  (g/css [:h4 :h6 {:color "#009FBC" :padding "0 0 5px 0" :font "normal 110% arial" :text-transform "uppercase"}]))
+
+
 
