@@ -1,4 +1,4 @@
-(ns clogure-sg.css 
+(ns clojure-sg.css 
   (:require [garden.core :as g]
            [garden.units :as u]
            [garden.selectors :as s]
@@ -115,9 +115,9 @@
 
 (dfn/defstyles hash-logo
   [:#logo {:width (u/px 880) 
-                  :position "relative"
-                  height: (u/px 140)
-                  background: "#F5F5F5"}])
+           :position "relative"
+           :height (u/px 140)
+           :background "#F5F5F5"}])
 
 
 (dfn/defstyles hash-logo-logo_text
@@ -154,7 +154,7 @@
 (dfn/defstyles hash-logo-text
   [:#logo_text [:h2 {:font-size {u/percent 120}
                             :padding "4px 0 0 0"
-                            :color: "#999"}]])
+                            :color "#999"}]])
 
 ;;#menubar
 ;;{ width: 872px;
@@ -249,7 +249,7 @@
   [:#site_content {:width (u/px 880)
                           :overflow "hidden"
                           :margin "20px auto 0 auto"
-                          padding "0 0 10px 0"}])
+                          :padding "0 0 10px 0"}])
 ;;#sidebar_container
 ;;{ float: left;
 ;;   width: 224px;}
@@ -380,7 +380,7 @@
 
 (dfn/defstyles  hash-footer-a
   [:#footer [:a {:color "#FFF"
-                        text-decoration: "none"}]])
+                        :text-decoration "none"}]])
 
 ;;#footer a:hover
 ;;{ color: #00C6F0;

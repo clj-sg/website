@@ -33,6 +33,7 @@
   "Launch immediate feedback dev environment"
   []
   (comp
+   (garden)
    (serve :handler 'clojure-sg.core/handler ;; add ring handler
           :resource-root "target"            ;; add resource-path
           :reload true)                      ;; reload server side ns
@@ -42,6 +43,6 @@
    (cljs)
    (target :dir #{"target"})));
 
-(task-options! garden {:styles-var   'clojure-sg.css/css-main
-		       :output-to    "target/css/main.css"
+(task-options! garden {:styles-var   'clojure-sg.css/main-css
+		       :output-to    "css/main.css"
                        :pretty-print true})
