@@ -25,7 +25,8 @@
 (require '[adzerk.boot-cljs :refer [cljs]]
          '[pandeiro.boot-http :refer [serve]]
          '[adzerk.boot-reload :refer [reload]]
-         '[adzerk.boot-cljs-repl :refer [cljs-repl start-repl]])
+         '[adzerk.boot-cljs-repl :refer [cljs-repl start-repl]]
+         '[org.martinklepsch.boot-garden :refer [garden]])
 
 ;;; add dev task
 (deftask dev
@@ -40,3 +41,7 @@
    (cljs-repl) ;; before cljs
    (cljs)
    (target :dir #{"target"})));
+
+(task-options! garden {:styles-var   'clojure-sg.css/css-main
+		       :output-to    "target/css/main.css"
+                       :pretty-print true})
