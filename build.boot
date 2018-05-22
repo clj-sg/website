@@ -1,10 +1,10 @@
 (set-env!
- :source-paths #{"src/clj" "src/cljs"}  ;; add CLJ source dir
+ :source-paths #{"src/clj" "src/cljs" "src/cljc"}  ;; add CLJ source dir
  :resource-paths #{"html"}
 
  :dependencies '[
                  [org.clojure/clojure "1.8.0"]         ;; add CLJ
-                 [org.clojure/clojurescript "1.9.473"] ;; add CLJS
+                 [org.clojure/clojurescript "1.9.854"] ;; add CLJS
                  [adzerk/boot-cljs "1.7.228-2"]
                  [pandeiro/boot-http "0.7.6"]
                  [adzerk/boot-reload "0.5.1"]
@@ -18,8 +18,9 @@
                  [org.clojars.magomimmo/shoreleave-remote "0.3.1"]
                  [compojure "1.5.2"]                   ;; routing lib
                  [javax.servlet/javax.servlet-api "3.1.0"]     ;; for dev only
-		 [org.martinklepsch/boot-garden "1.3.2-1"] ;; CSS preprocessor
-                 [garden "1.2.5"]
+		 [org.martinklepsch/boot-garden "1.3.2-1"] ;; garden task
+                 [garden "1.2.5"]  ;; CSS preprocessor
+		 [org.clojars.magomimmo/valip "0.4.0-SNAPSHOT"] ;; validation library
                  ])
 
 (require '[adzerk.boot-cljs :refer [cljs]]
@@ -33,12 +34,12 @@
   "Launch immediate feedback dev environment"
   []
   (comp
-   (garden)
    (serve :handler 'clojure-sg.core/handler ;; add ring handler
           :resource-root "target"            ;; add resource-path
           :reload true)                      ;; reload server side ns
    (watch)
    (reload)
+   (garden)
    (cljs-repl) ;; before cljs
    (cljs)
    (target :dir #{"target"})));
