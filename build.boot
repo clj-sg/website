@@ -3,8 +3,8 @@
  :resource-paths #{"html"}
 
  :dependencies '[
-                 [org.clojure/clojure "1.8.0"]         ;; add CLJ
-                 [org.clojure/clojurescript "1.9.473"] ;; add CLJS
+                 [org.clojure/clojure "1.9.0"]         ;; add CLJ
+                 [org.clojure/clojurescript "1.10.238"] ;; add CLJS
                  [adzerk/boot-cljs "1.7.228-2"]
                  [pandeiro/boot-http "0.7.6"]
                  [adzerk/boot-reload "0.5.1"]
