@@ -1,0 +1,4 @@
+{:project     clj-sg/website
+ :version     "0.0.1"
+ :description "Singapore Clojure meetup website."
+ :url         "https://github.com/clj-sg/website"}
