@@ -1,4 +1,5 @@
 [![CircleCI](https://circleci.com/gh/clj-sg/website/tree/master.svg?style=svg)](https://circleci.com/gh/clj-sg/website/tree/master)
+[![GitHub license](https://img.shields.io/github/license/flybot-sg/console.svg)](LICENSE.txt)
 
 Singapore Clojure Meetup Website
 ================================
