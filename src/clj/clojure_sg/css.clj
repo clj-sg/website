@@ -1,4 +1,4 @@
-(ns clojure-sg.css 
+(ns clojure-sg.css
     (:require [garden.core :as g]
               [garden.units :as u]
               [garden.selectors :as s]
@@ -6,7 +6,7 @@
               [garden.def :as dfn]))
 
 ;;HTML component
-(dfn/defstyles html 
+(dfn/defstyles html
     [:html {:height (u/percent 100)
             :display "grid"}])
 
@@ -15,23 +15,23 @@
     [:* {:margin 0 :padding 0}])
 
 ;;body
-(dfn/defstyles body 
-    [:body {:font " normal .80em 'trebuchet ms', arial, sans-serif" 
-            :background "#FFF" 
+(dfn/defstyles body
+    [:body {:font " normal .80em 'trebuchet ms', arial, sans-serif"
+            :background "#FFF"
             :color "#FFF"
             :height (u/percent 100)
             :display "grid"}])
 ;;p
 (dfn/defstyles p
-    [:p {:padding "0 0 20px 0" 
+    [:p {:padding "0 0 20px 0"
                        :line-height (u/em 1.7)}])
 
 ;;img
 (dfn/defstyles img
-    [:img {:margin "auto"}])
+    [:a {:margin "auto"}])
 
 (dfn/defstyles h1-h2-h3-h4-h5-h6
-    [:h1 :h2 :h3 :h4 :h5 :h6 {:color "#362C20" 
+    [:h1 :h2 :h3 :h4 :h5 :h6 {:color "#362C20"
                               :letter-spacing (u/em 0)
                               :padding "0 0 5px 0"}])
 
@@ -42,8 +42,8 @@
                   :color "#000"}])
 
 (dfn/defstyles h2
-    [:h2 {:font-size (u/percent 160) 
-          :padding "9px 0 5px 0" 
+    [:h2 {:font-size (u/percent 160)
+          :padding "9px 0 5px 0"
           :color "#009FBC"}])
 
 
@@ -65,7 +65,7 @@
              :vertical-align "middle"}])
 
 
-(dfn/defstyles wrapper 
+(dfn/defstyles wrapper
   [:#wrapper {:height "100%"
                :width "100%"
                :margin 0
